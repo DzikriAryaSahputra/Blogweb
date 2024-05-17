@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        body {
+            background-color: white;
+        }
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar a:hover{
+    background-color: #666666;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 30%; 
+    transition: background-color 0.3s ease,padding 0.3s ease;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+        .wrapper {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 450px;
+            display: flex;
+            box-shadow: 0 1px 20px 0 rgba(0, 0, 0, .08);
+        }
+
+        .wrapper .left {
+            width: 40%;
+            background: #919aa3;
+            padding: 30px 40px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            text-align: center;
+            color: black;
+        }
+
+        .wrapper .left img {
+            border-radius: 15px;
+            margin-bottom: 10px;
+        }
+
+        .wrapper .left h4 {
+            margin-bottom: 10px;
+        }
+
+        .wrapper .left p {
+            font-size: 12px;
+        }
+
+        .wrapper .right {
+            width: 60%; 
+            background: whitesmoke;
+            padding: 30px; 
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        .wrapper .right .info,
+        .wrapper .right .projects {
+            margin-bottom: 25px;
+        }
+
+        .wrapper .right .info h3,
+        .wrapper .right .projects h3 {
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #e0e0e0;
+            color: #353c4e;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        .wrapper .info_data,
+        .wrapper .projects_data {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .wrapper .info_data .data,
+        .wrapper .projects_data .data {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .wrapper .right .info_data .data h4,
+        .wrapper .right .projects_data .data h4 {
+            color: #353c4e;
+            margin-bottom: 10px;
+        }
+
+        .wrapper .right .info_data .data p,
+        .wrapper .right .projects_data .data p {
+            font-size: 13px;
+            margin-bottom: 10px;
+            color: #919aa3;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar">
+            <a class="active" href="index.php">Home</a>
+             <a href="Profile.php" target="_blank">Profile</a>
+             <a href="Gbook.php">Guest Book</a>
+        </nav>
+<div class="wrapper">
+    <div class="left">
+        <img src="Profile.jpg"
+             alt="user" width="100">
+        <h4>Dzikri Arya Sahputra</h4>
+        <p>701230035</p>
+    </div>
+    <div class="right">
+        <div class="info">
+            <h3>Data Diri</h3>
+            <div class="info_data">
+                <div class="data">
+                    <h4>Tanggal Lahir</h4>
+                    <p>24 November 2005</p>
+                </div>
+                <div class="data">
+                    <h4>Prodi</h4>
+                    <p>Sistem Informasi</p>
+                </div>
+                <div class="data">
+                    <h4>Makanan Favorite</h4>
+                    <p>Masakan Mama</p>
+                </div>
+                <div class="data">
+                    <h4>Cita-Cita</h4>
+                    <p>Developer</p>
+                </div>
+                <div class="data">
+                    <h4>Hobi</h4>
+                    <p>Menonton Film</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects">
+            <h3>Contact</h3>
+            <div class="projects_data">
+                <div class="data">
+                    <h4>Email</h4>
+                    <p>dzikrias80@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
